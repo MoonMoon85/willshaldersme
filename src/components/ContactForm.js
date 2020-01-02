@@ -75,11 +75,7 @@ function ContactForm(props) {
         <FormStatus type={props.status.type} message={props.status.message} />
       )}
 
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-          handleSubmit();
-        }}
+      <form name="contact" method="POST" data-netlify="true"
       >
         <div className="field is-horizontal">
           <div className="field-body">
@@ -117,17 +113,7 @@ function ContactForm(props) {
           <div className="field-body">
             <div className="field">
               <div className="control">
-                <SectionButton
-                  parentColor={props.parentColor}
-                  size="medium"
-                  state={
-                    props.status && props.status.type === "pending"
-                      ? "loading"
-                      : "normal"
-                  }
-                >
-                  {props.buttonText}
-                </SectionButton>
+                <button type="submit">Send</button>
               </div>
             </div>
           </div>

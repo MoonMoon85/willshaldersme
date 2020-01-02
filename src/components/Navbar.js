@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import NavbarContainer from "./NavbarContainer";
-import { Link, useRouter } from "./../util/router.js";
 import SectionButton from "./SectionButton";
-import { useAuth } from "./../util/auth.js";
 
 function Navbar(props) {
-  const auth = useAuth();
-  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -14,9 +10,7 @@ function Navbar(props) {
       <div className="container">
         <div className="navbar-brand">
           <div className="navbar-item">
-            <Link to="/">
-              <h1 className="title has-text-weight-bold is-spaced is-3">{props.logo}</h1>
-            </Link>
+            <h1 className="title has-text-weight-bold is-spaced is-3">{props.logo}</h1>
           </div>
           <div
             className={"navbar-burger burger" + (menuOpen ? " is-active" : "")}
@@ -33,6 +27,7 @@ function Navbar(props) {
               <SectionButton
                 parentColor={props.color}
                 size="normal"
+                href={props.buttonLink}
               >
                 Contact
               </SectionButton>

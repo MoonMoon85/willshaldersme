@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function SectionButton(props) {
   const {
@@ -11,7 +12,7 @@ function SectionButton(props) {
   } = props;
 
   return (
-    <button
+    <AnchorLink
       className={
         "button" +
         ([
@@ -35,7 +36,7 @@ function SectionButton(props) {
       {...otherProps}
     >
       {props.children}
-    </button>
+    </AnchorLink>
   );
 }
 

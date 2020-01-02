@@ -6,7 +6,7 @@ import "./ContactSection.scss";
 
 function ContactSection(props) {
   return (
-    <Section color={props.color} size={props.size}>
+    <Section id="contact" color={props.color} size={props.size}>
       <div className="ContactSection__container container">
         <SectionHeader
           title={props.title}

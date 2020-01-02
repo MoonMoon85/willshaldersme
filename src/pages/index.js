@@ -2,15 +2,11 @@ import React from "react";
 import Navbar from "./../components/Navbar";
 import HeroSection from "./../components/HeroSection";
 import FeaturesSection from "./../components/FeaturesSection";
-import FeaturesSection2 from "./../components/FeaturesSection2";
 import ContactSection from "./../components/ContactSection";
-import Footer from "./../components/Footer";
-import { useRouter } from "./../util/router.js";
 import HeroImage from "./../images/hero.svg"
 
 
 function IndexPage(props) {
-  const router = useRouter();
 
   return (
     <>
@@ -18,6 +14,7 @@ function IndexPage(props) {
         color="white"
         spaced={true}
         logo='Will Shalders'
+        buttonLink='#contact'
       />
       <HeroSection
         color="white"
@@ -25,9 +22,7 @@ function IndexPage(props) {
         title="Hello! I'm Will, a frontend developer in Melbourne."
         buttonText="Let's have a chat!"
         image={HeroImage}
-        buttonOnClick={() => {
-          router.push("/pricing");
-        }}
+        buttonLink='#contact'
       />
       <FeaturesSection
         color="white"

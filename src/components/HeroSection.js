@@ -18,6 +18,7 @@ function HeroSection(props) {
               parentColor={props.color}
               size="medium"
               onClick={props.buttonOnClick}
+              href={props.buttonLink}
             >
               {props.buttonText}
             </SectionButton>
