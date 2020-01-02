@@ -39,8 +39,8 @@ function IndexPage(props) {
       <ContactSection
         color="white"
         size="medium"
-        title="Contact Us"
-        subtitle=""
+        title="Get in touch"
+        subtitle="Phone: 0416 116 297 | Email: info@willshalders.me | Or fill in the form below."
         showNameField={true}
         buttonText="Send message"
       />
