@@ -1,0 +1,62 @@
+import React from "react";
+import Navbar from "./../components/Navbar";
+import HeroSection from "./../components/HeroSection";
+import FeaturesSection from "./../components/FeaturesSection";
+import FeaturesSection2 from "./../components/FeaturesSection2";
+import ContactSection from "./../components/ContactSection";
+import Footer from "./../components/Footer";
+import { useRouter } from "./../util/router.js";
+import HeroImage from "./../images/hero.svg"
+
+
+function IndexPage(props) {
+  const router = useRouter();
+
+  return (
+    <>
+      <Navbar
+        color="white"
+        spaced={true}
+        logo='Will Shalders'
+      />
+      <HeroSection
+        color="white"
+        size="medium"
+        title="Hello! I'm Will, a frontend developer in Melbourne."
+        buttonText="Let's have a chat!"
+        image={HeroImage}
+        buttonOnClick={() => {
+          router.push("/pricing");
+        }}
+      />
+      <FeaturesSection
+        color="white"
+        size="medium"
+        title="A little about me."
+        subtitle="I am a front end developer with 8+ years experience. I have worked in a wide variety of environments, from a boutique four person agency to an enterprise level software development team. My skills help bridge the gap between design and back end. I use html, css and javascript to build responsive, functional web sites & apps."
+      />
+      {/* <FeaturesSection2
+        color="white"
+        size="medium"
+        title="Stuff I've worked on"
+        subtitle="A small collection of work"
+      /> */}
+      <ContactSection
+        color="white"
+        size="medium"
+        title="Contact Us"
+        subtitle=""
+        showNameField={true}
+        buttonText="Send message"
+      />
+      {/* <Footer
+        color="white"
+        size="normal"
+        logo="https://uploads.divjoy.com/logo.svg"
+        copyright="© 2019 Company"
+      /> */}
+    </>
+  );
+}
+
+export default IndexPage;
