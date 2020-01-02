@@ -106,7 +106,7 @@ function ContactForm(props) {
             <FormField
               value={message}
               type="textarea"
-              name="textarea"
+              name="message"
               placeholder="Message"
               error={showErrors && getError("message")}
               onChange={value => setMessage(value)}
