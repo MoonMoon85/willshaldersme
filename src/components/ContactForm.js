@@ -84,6 +84,7 @@ function ContactForm(props) {
               <FormField
                 value={name}
                 type="text"
+                name="name"
                 placeholder="Name"
                 error={showErrors && getError("name")}
                 onChange={value => setName(value)}
@@ -93,6 +94,7 @@ function ContactForm(props) {
             <FormField
               value={email}
               type="email"
+              name="email"
               placeholder="Email"
               error={showErrors && getError("email")}
               onChange={value => setEmail(value)}
@@ -104,6 +106,7 @@ function ContactForm(props) {
             <FormField
               value={message}
               type="textarea"
+              name="textarea"
               placeholder="Message"
               error={showErrors && getError("message")}
               onChange={value => setMessage(value)}

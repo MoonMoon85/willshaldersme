@@ -11,6 +11,7 @@ function FormField(props) {
             value={props.value}
             placeholder={props.placeholder}
             onChange={e => props.onChange(e.target.value)}
+            name={props.name}
           />
         )}
 
@@ -21,6 +22,7 @@ function FormField(props) {
             value={props.value}
             placeholder={props.placeholder}
             onChange={e => props.onChange(e.target.value)}
+            name={props.name}
           />
         )}
       </div>
