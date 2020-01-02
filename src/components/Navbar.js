@@ -33,6 +33,7 @@ function Navbar(props) {
               <SectionButton
                 parentColor={props.color}
                 size="normal"
+                href={props.buttonLink}
               >
                 Contact
               </SectionButton>

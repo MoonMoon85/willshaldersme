@@ -18,16 +18,15 @@ function IndexPage(props) {
         color="white"
         spaced={true}
         logo='Will Shalders'
+        buttonLink="#contact"
       />
       <HeroSection
         color="white"
         size="medium"
         title="Hello! I'm Will, a frontend developer in Melbourne."
         buttonText="Let's have a chat!"
+        buttonLink="#contact"
         image={HeroImage}
-        buttonOnClick={() => {
-          router.push("/pricing");
-        }}
       />
       <FeaturesSection
         color="white"
@@ -44,10 +43,11 @@ function IndexPage(props) {
       <ContactSection
         color="white"
         size="medium"
-        title="Contact Us"
-        subtitle=""
+        title="Get in touch"
+        subtitle="Phone: 0416 116 297, email: info@willshalders.me or fill in the form below."
         showNameField={true}
         buttonText="Send message"
+        buttonLink="#contact"
       />
       {/* <Footer
         color="white"
