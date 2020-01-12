@@ -19,7 +19,7 @@ function IndexPage(props) {
       <HeroSection
         color="white"
         size="medium"
-        title="Hello! I'm Will, a frontend developer in Melbourne."
+        title="Hello! I'm Will, a front end developer in Melbourne."
         buttonText="Let's have a chat!"
         image={HeroImage}
         buttonLink='#contact'

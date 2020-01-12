@@ -22,7 +22,7 @@ function FeaturesSection(props) {
             {
               title: "I write HTML",
               description:
-                "Mobile first, clean & semantic. I can use JSX or write it the old fashined way.",
+                "Mobile first, clean & semantic. I can use JSX or write it the old fashioned way.",
               image: `${Html}`
             },
             {
@@ -40,7 +40,7 @@ function FeaturesSection(props) {
             {
               title: "And of course Javscript",
               description:
-                "Strong programming fundamentals using Vanilla and React are my go to's",
+                "Strong programming fundamentals using Vanilla and React are my go-tos",
               image: `${Javascript}`
             }
           ]}
