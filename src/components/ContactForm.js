@@ -76,17 +76,15 @@ function ContactForm(props) {
       )}
 
       <form name="contact" method="POST" data-netlify="true"
-        onSubmit={e => {
-          e.preventDefault();
-          handleSubmit();
-        }}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="field is-horizontal">
           <div className="field-body">
             {props.showNameField && (
               <FormField
                 value={name}
                 type="text"
+                name="name"
                 placeholder="Name"
                 error={showErrors && getError("name")}
                 onChange={value => setName(value)}
@@ -96,6 +94,7 @@ function ContactForm(props) {
             <FormField
               value={email}
               type="email"
+              name="email"
               placeholder="Email"
               error={showErrors && getError("email")}
               onChange={value => setEmail(value)}
@@ -107,6 +106,7 @@ function ContactForm(props) {
             <FormField
               value={message}
               type="textarea"
+              name="message"
               placeholder="Message"
               error={showErrors && getError("message")}
               onChange={value => setMessage(value)}

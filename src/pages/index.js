@@ -2,15 +2,11 @@ import React from "react";
 import Navbar from "./../components/Navbar";
 import HeroSection from "./../components/HeroSection";
 import FeaturesSection from "./../components/FeaturesSection";
-import FeaturesSection2 from "./../components/FeaturesSection2";
 import ContactSection from "./../components/ContactSection";
-import Footer from "./../components/Footer";
-import { useRouter } from "./../util/router.js";
 import HeroImage from "./../images/hero.svg"
 
 
 function IndexPage(props) {
-  const router = useRouter();
 
   return (
     <>
@@ -44,7 +40,7 @@ function IndexPage(props) {
         color="white"
         size="medium"
         title="Get in touch"
-        subtitle="Phone: 0416 116 297, email: info@willshalders.me or fill in the form below."
+        subtitle="Phone: 0416 116 297 | Email: info@willshalders.me"
         showNameField={true}
         buttonText="Send message"
         buttonLink="#contact"
