@@ -1,11 +1,9 @@
 import React from "react";
 import IndexPage from "./index";
 import { Switch, Route, Router } from "./../util/router.js";
-import { ProvideAuth } from "./../util/auth.js";
 
 function App(props) {
   return (
-    <ProvideAuth>
       <Router>
         <Switch>
           <Route exact path="/" component={IndexPage} />
@@ -27,7 +25,6 @@ function App(props) {
           />
         </Switch>
       </Router>
-    </ProvideAuth>
   );
 }
 

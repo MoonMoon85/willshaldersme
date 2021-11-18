@@ -14,11 +14,11 @@ function ContactSection(props) {
           centered={true}
           size={3}
         />
-        <Contact
+        {/* <Contact
           parentColor={props.color}
           showNameField={props.showNameField}
           buttonText={props.buttonText}
-        />
+        /> */}
       </div>
     </Section>
   );
