@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78781e4e.chunk.css",
+    "main.js": "/static/js/main.1ba63042.chunk.js",
+    "main.js.map": "/static/js/main.1ba63042.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ffc78f56.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ffc78f56.js.map",
+    "static/js/2.fdceb679.chunk.js": "/static/js/2.fdceb679.chunk.js",
+    "static/js/2.fdceb679.chunk.js.map": "/static/js/2.fdceb679.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.eae0cdb3153be3673ee5c8144df01858.js": "/precache-manifest.eae0cdb3153be3673ee5c8144df01858.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.78781e4e.chunk.css.map": "/static/css/main.78781e4e.chunk.css.map",
+    "static/media/bet-easy-njt.jpg": "/static/media/bet-easy-njt.76748039.jpg",
+    "static/media/css.svg": "/static/media/css.f7f12d8b.svg",
+    "static/media/hero.svg": "/static/media/hero.46d9f22b.svg",
+    "static/media/html.svg": "/static/media/html.62754a97.svg",
+    "static/media/react.svg": "/static/media/react.e56ab6de.svg",
+    "static/media/workflow.svg": "/static/media/workflow.bd6fb7a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ffc78f56.js",
+    "static/js/2.fdceb679.chunk.js",
+    "static/css/main.78781e4e.chunk.css",
+    "static/js/main.1ba63042.chunk.js"
+  ]
+}

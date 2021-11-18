@@ -20,28 +20,22 @@ function FeaturesSection(props) {
         <Features
           items={[
             {
-              title: "I write HTML",
+              title: "Strong experience in React",
               description:
-                "Mobile first, clean & semantic. I can use JSX or write it the old fashined way.",
-              image: `${Html}`
+                "Highly proficient in modern JavaScript front end technologies. ES6+, React, React Native and the surrounding eco system. Building scalable, reusable and tested components. With strong functional programming fundamentals.",
+              image: `${Javascript}`
+            },
+            {
+              title: "I like workflow tools",
+              description:
+                "Using tools like Webpack or Babel. Building and maintaining CI/CD pipelines. Creating and working within Git workflows. Experience in Bitrise, AWS, Vercel, Netlify and Bitbucket pipelines.",
+              image: `${Workflow}`
             },
             {
               title: "And CSS",
               description:
-                "I am comfortable with Sass but also use the React css ecosystem.",
+                "Building responsive scalable components and apps. Experience with styled components, emotion, tailwind and sass. I have an eye for design and impactful user experience. I am a proponent for design systems and reusability.",
               image: `${Css}`
-            },
-            {
-              title: "I like to automate",
-              description:
-                "Using tools like Webpack or Gulp. Wrting tests and working with CI/CD",
-              image: `${Workflow}`
-            },
-            {
-              title: "And of course Javscript",
-              description:
-                "Strong programming fundamentals using Vanilla and React are my go to's",
-              image: `${Javascript}`
             }
           ]}
         />
